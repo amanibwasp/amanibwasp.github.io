@@ -1,0 +1,148 @@
+
+
+.cta-form{
+    display: block;
+    padding: 2em;
+    border: 1px solid black;
+    background: linear-gradient(rgb(239,190,124), rgb(17,11,15));
+    border-radius: 5px;
+    width: 45%;
+    height:fit-content;
+    position: relative;
+    box-shadow: 3px 3px 2px 2px rgb(53, 53, 53);
+}
+
+.cta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/CTA/cta-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 35em;
+}
+.cta-text{
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: left;
+}
+.cta-text-main{
+    
+    font-size: 2.5em;
+    margin-bottom: 0.7em;
+    color:white;
+    text-shadow: #222222 2px 2px 2px;
+}
+.cta-text-addition{
+    color:white;
+    text-shadow: #222222 2px 2px 2px;
+    font-size: 1.5em;
+}
+
+.cta-text-input{
+    background-color: rgb(110, 110, 110);
+    width: 100%;
+    border-radius: 5px;
+    height: 2em;
+    margin: 0.5em 0em 0.5em 0em;
+    color:white;
+}
+.cta-label{
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 1.3em;
+    padding: 0.3em 0em 0.3em 0em;
+
+}
+
+.cta-confirm-button{
+    background-color: rgb(110, 110, 110);
+    color:rgb(255, 255, 255);
+    font-size: 1.3em;
+    padding: 0.3em;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.lamp {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 60px;
+    top: 60px;
+    right:-20px;
+    border-top: 30px solid #222222;
+    border-bottom: 30px solid transparent;
+    border-radius: 50%;
+    z-index: 2;
+  }
+  .lamp:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 2px;
+    height: 20px;
+    background: black;
+    top: -50px;
+    left: 30px;
+  }
+  
+  .lamp:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    top: -50px;
+    left: -70px;
+    border-top: 30px solid transparent;
+    border-bottom: 150px solid rgba(253, 223, 125, 0.4);
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    z-index: 1;
+  }
+  
+  @keyframes swing {
+    0% {
+      transform: rotate(-10deg);
+    }
+    100% {
+      transform: rotate(10deg);
+    }
+  }
+  
+  .swing {
+    animation: swing 2.3s infinite alternate ease-in-out;
+    transform-origin: 30px -20px;
+  }
+
+@media (max-width:768px){
+    .cta{
+        flex-direction: column;
+    }
+    .cta-text{
+        padding: 1em;
+        width: 100%;
+        text-align: center;
+    }
+    
+}
+@media (max-width:1024px){
+    .cta-text-main{
+    
+        font-size: 2em;
+        margin-bottom: 0.7em;
+    }
+    .cta-text-addition{
+        
+        font-size: 1.3em;
+    }
+    .cta-form{
+        width: 100%;
+        margin: auto;
+    }
+    
+}

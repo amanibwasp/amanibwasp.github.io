@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+html,body{
+    padding: 0;
+    font-family:'Courier New', Courier, monospace;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.advantages-examples-wrapper{
+    background-image: url("../img/advantages/advantages-background.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.section-title{
+    color: wheat;
+    font-size: 2.3em;
+}
