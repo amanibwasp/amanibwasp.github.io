@@ -69,3 +69,12 @@
 .services div:nth-of-type(3){
     background-image: url("../img/services/service3.jpg")
 }
+@media(max-width:844px){
+    .services{
+        flex-direction: column;
+        height: 1100px;
+    }
+    .service{
+        width: 75%;
+    }
+}

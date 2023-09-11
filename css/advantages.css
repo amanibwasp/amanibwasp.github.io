@@ -43,7 +43,7 @@
     text-align: center;
 }
 
-@media (max-width: 425px) {
+@media(max-width:756px){
     .advantages-grid{
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
@@ -52,6 +52,9 @@
     "advantage advantage"
     "advantage advantage";
     }
+}
+
+@media (max-width: 425px) {
     .advantage-text{
         font-size: 16px;
     }

@@ -32,13 +32,19 @@ nav{
     transition: all 0.5s;
     position: fixed;
     list-style: none;
+    
     transform: translateY(-100%);
 }
 .nav-menu-burger li{
     padding: 1.3em;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-shadow: black 1px 1px 1px;
 }
 .nav-menu-burger.active{
     transform: translateY(0);
+    touch-action: none;
+    z-index: 3;
 }
 
 .hamburger-button{
@@ -48,6 +54,7 @@ nav{
     position: absolute;
     top: 5px;
     right: 10px;
+    z-index: 4;
 }
 
 .hamburger-button span{

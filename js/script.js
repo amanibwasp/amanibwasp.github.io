@@ -29,6 +29,7 @@
 let burger_button = document.querySelector(".hamburger-button").addEventListener("click", ()=>
 {
     document.querySelector(".nav-menu-burger").classList.toggle("active")
+    // document.querySelector("body").classList.toggle("fixed-position")
 })
 
 

@@ -9,6 +9,10 @@ html,body{
     height: 100%;
 }
 
+/* .fixed-position{
+    position: fixed;
+} */
+
 .advantages-examples-wrapper{
     background-image: url("../img/advantages/advantages-background.jpg");
     background-attachment: fixed;

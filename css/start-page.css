@@ -1,9 +1,9 @@
 
-h1{
-    font-size: 40px;
+.start-page-title{
+    font-size: 2.7em;
 }
-h2{
-    font-size: 30px;
+.start-page-subtitle{
+    font-size: 1.8em;
 }
 .main-container{
     color: black;
@@ -31,3 +31,27 @@ h2{
     
 }
 
+@media (max-width: 736px){
+    .start-page-title{
+        font-size: 2.3em;
+    }
+    .start-page-subtitle{
+        font-size: 1.4em;
+    }
+}
+@media (max-width: 640px){
+    .start-page-title{
+        font-size: 2em;
+    }
+    .start-page-subtitle{
+        font-size: 1.2em;
+    }
+}
+@media (max-width: 542px){
+    .start-page-title{
+        font-size: 1.6em;
+    }
+    .start-page-subtitle{
+        font-size: 1.2em;
+    }
+}
