@@ -8,7 +8,7 @@
 }
 .advantages-grid{
     backdrop-filter:brightness(30%);
-    height: 30em;
+    height: 50%;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -53,7 +53,14 @@
     "advantage advantage";
     }
 }
-
+@media (max-width: 496px) {
+    .advantage-text{
+        font-size: 18px;
+    }
+    .advantage-icon{
+        font-size: 2.2em;
+    }
+}
 @media (max-width: 425px) {
     .advantage-text{
         font-size: 16px;
@@ -62,7 +69,7 @@
         font-size: 2em;
     }
 }
-@media (max-width: 320px) {
+@media (max-width: 366px) {
     .advantages-grid{
         grid-template-columns: 1fr;
         grid-template-areas: 
@@ -76,9 +83,9 @@
     }
     
     .advantage-text{
-        font-size: 18px;
+        font-size: 20px;
     }
     .advantage-icon{
-        font-size: 2.2em;
+        font-size: 2.5em;
     }
 }

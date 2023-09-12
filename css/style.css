@@ -23,3 +23,18 @@ html,body{
     color: wheat;
     font-size: 2.3em;
 }
+@media (max-width:540px){
+    .section-title{
+        font-size: 1.8em;
+    }
+}
+@media (max-width:425px){
+    .section-title{
+        font-size: 1.5em;
+    }
+}
+@media (max-width:372px){
+    .section-title{
+        font-size: 1.3em;
+    }
+}

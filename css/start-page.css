@@ -1,9 +1,13 @@
 
 .start-page-title{
     font-size: 2.7em;
+    text-shadow: rgb(255, 136, 0) 1px 0 1px;
+    text-align: center;
 }
 .start-page-subtitle{
     font-size: 1.8em;
+    text-shadow: rgb(255, 136, 0) 1px 0 1px;
+    text-align: center;
 }
 .main-container{
     color: black;
@@ -49,7 +53,7 @@
 }
 @media (max-width: 542px){
     .start-page-title{
-        font-size: 1.6em;
+        font-size: 1.8em;
     }
     .start-page-subtitle{
         font-size: 1.2em;

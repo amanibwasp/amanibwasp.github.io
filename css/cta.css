@@ -162,14 +162,38 @@
         height:fit-content;
     }
 }
-@media (max-width:514px){
+@media (max-width:606px){
     .cta-text-main{
     
-        font-size: 2em;
+        font-size: 1.8em;
         
     }
     .cta-text-addition{
         
         font-size: 1.2em;
+    }
+}
+@media (max-width:520px){
+    .cta-text-main{
+    
+        font-size: 1.6em;
+        
+    }
+    .cta-text-addition{
+        
+        font-size: 1.2em;
+    }
+}
+@media (max-width:506px){
+    .cta{
+        padding:1.5em;
+    }
+}
+@media (max-width:425px ){
+    .cta{
+        padding:1.5em;
+    }
+    .cta-text-main{
+        font-size: 1.3em;
     }
 }
