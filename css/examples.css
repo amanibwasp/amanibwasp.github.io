@@ -1,6 +1,7 @@
 
 .examples-container{
-    backdrop-filter:brightness(30%);
+    background-color: rgb(206, 206, 206);
+    /* backdrop-filter:brightness(30%); */
     width: 100%;
     height: 50%;
     position: relative;
@@ -50,13 +51,13 @@
 .example-text-title{
     font-weight: 600;
     font-size: 2em;
-    color:wheat
+    color:rgb(0, 0, 0)
 }
 
 .example-text-description{
     font-weight: 300;
     font-size: 1em;
-    color: gray;
+    color: rgb(58, 58, 58);
 }
 
 

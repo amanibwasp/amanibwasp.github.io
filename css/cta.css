@@ -4,7 +4,7 @@
     display: block;
     padding: 2em;
     border: 1px solid black;
-    background: linear-gradient(rgb(239,190,124), rgb(17,11,15));
+    background: linear-gradient(rgb(136, 136, 136), rgb(255, 157, 170));
     border-radius: 5px;
     width: 45%;
     height:fit-content;
@@ -17,9 +17,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("../img/CTA/cta-bg.jpg");
+    /* background-image: url("../img/CTA/cta-bg.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: center; */
+    background-color: rgb(206, 206, 206);
     height: 35em;
 }
 .cta-text{
@@ -33,12 +34,12 @@
     
     font-size: 2.5em;
     margin-bottom: 0.7em;
-    color:white;
-    text-shadow: #000000 2px 2px 2px;
+    color:rgb(0, 0, 0);
+    /* text-shadow: #000000 2px 2px 2px; */
 }
 .cta-text-addition{
-    color:white;
-    text-shadow: #000000 2px 2px 2px;
+    color:rgb(41, 41, 41);
+    /* text-shadow: #000000 2px 2px 2px; */
     font-size: 1.5em;
 }
 
@@ -68,57 +69,8 @@
     width: fit-content;
 }
 
-.lamp {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 60px;
-    top: 60px;
-    right:-20px;
-    border-top: 30px solid #222222;
-    border-bottom: 30px solid transparent;
-    border-radius: 50%;
-    z-index: 2;
-  }
-  .lamp:before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 2px;
-    height: 20px;
-    background: black;
-    top: -50px;
-    left: 30px;
-  }
-  
-  .lamp:after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 40px;
-    height: 20px;
-    top: -50px;
-    left: -70px;
-    border-top: 30px solid transparent;
-    border-bottom: 150px solid rgba(253, 223, 125, 0.4);
-    border-left: 80px solid transparent;
-    border-right: 80px solid transparent;
-    z-index: 1;
-  }
-  
-  @keyframes swing {
-    0% {
-      transform: rotate(-10deg);
-    }
-    100% {
-      transform: rotate(10deg);
-    }
-  }
-  
-  .swing {
-    animation: swing 2.3s infinite alternate ease-in-out;
-    transform-origin: 30px -20px;
-  }
+
+
 
 
 @media (max-width:1024px){

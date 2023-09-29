@@ -9,8 +9,8 @@
 }
 
 .footer-container{
-    color:wheat;
-    background-color: rgb(17,11,15);
+    color:rgb(0, 0, 0);
+    background: linear-gradient(rgb(136, 136, 136), rgb(0, 136, 146, 0.4));
     padding:1.4em;
     display: flex;
     justify-content: space-between;
@@ -36,7 +36,7 @@
     padding: 0.7em;
 }
 .footer-li:hover{
-    color: rgb(255, 213, 136);
+    color: rgb(46, 46, 46);
     cursor: pointer;
 }
 .footer-contacts{

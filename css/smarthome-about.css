@@ -1,0 +1,13 @@
+.smarthome-about-text{
+    hyphens: auto;
+    font-size: 1.5em;
+    
+}
+
+.smarthome-about{
+    padding: 1.5em;
+    background-color: rgb(206, 206, 206);
+    color:black;
+    text-align: center;
+
+}

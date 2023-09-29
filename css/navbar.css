@@ -2,8 +2,8 @@ nav{
     display: flex;
     width: 100%;
     align-items: center;
-    color:wheat;
-    background-color: rgb(17,11,15);
+    color:rgb(0, 0, 0);
+    background: linear-gradient(rgb(136, 136, 136), rgba(0, 136, 146, 0.4));
 }
 .nav-menu{
     justify-content: space-between;
@@ -11,13 +11,14 @@ nav{
     display: flex;
 }
 .nav-menu li{
+    font-weight: 400;
     padding: 1em;
     font-size: 1.3em;
 }
 
 .nav-menu li:hover{
     cursor: pointer;
-    color: rgb(255, 213, 136);
+    color: rgb(82, 82, 82);
 }
 
 .nav-menu-burger li:hover{
@@ -39,7 +40,7 @@ nav{
     padding: 1.3em;
     font-size: 1.5em;
     font-weight: 600;
-    text-shadow: black 1px 1px 1px;
+    /* text-shadow: black 1px 1px 1px; */
 }
 .nav-menu-burger.active{
     transform: translateY(0);
@@ -63,7 +64,7 @@ nav{
     height: 2px;
     top: 50%;
     width: 100%;
-    background-color: wheat;
+    background-color: rgb(155, 155, 155);
 }
 .hamburger-button span:nth-of-type(1){
     top: calc(50% - 5px);

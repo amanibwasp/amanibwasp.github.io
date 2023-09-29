@@ -1,8 +1,9 @@
-
+.services-section{
+    background-color: rgb(206, 206, 206);
+}
 
 .services {
     width: 100%;
-    background-color: rgb(21, 3, 3);
     color: white;
     height: 500px;
     display: flex;
@@ -11,7 +12,7 @@
 }
 
 .service {
-    margin: 20px;
+    margin: 0px 20px;
     width: 25%;
     background-size: cover;
     background-position: center;
