@@ -26,6 +26,8 @@ html,body{
     display: block;
     text-align: center;
     padding: 1.2em;
+    border-top: 2px solid rgba(0, 136, 146, 0.4);
+    border-bottom: 2px solid rgba(0, 136, 146, 0.4);
 }
 @media (max-width:540px){
     .section-title{
