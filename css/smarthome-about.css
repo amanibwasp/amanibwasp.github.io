@@ -2,12 +2,112 @@
     hyphens: auto;
     font-size: 1.5em;
     padding: 1.5em;
+    height: 240px;
+    overflow: hidden;
+}
+.smarthome-about-text.opened{
+    height: fit-content;
+}
+.smarthome-about-container{
+    padding: 1.5em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.smarthome-about{
-    padding: 1.5em;
+.smarthome-about-section{
+    
     background-color: rgb(206, 206, 206);
     color:black;
-    text-align: center;
+}
 
+.arrow {
+    display: none;
+    position: relative;
+    cursor: pointer;
+    margin:20px;
+    width: 66px;
+    height: 30px;
+}
+.arrow-left {
+    position: absolute;
+    background-color: transparent;
+    top: 10px;
+    left: 0;
+    width: 40px;
+    height: 10px;
+    display: block;
+    transform: rotate(35deg);
+    float: right;
+    border-radius: 2px;
+}
+.arrow-left:after {
+    content: "";
+    background-color: #337AB7;
+    width: 40px;
+    height: 10px;
+    display: block;
+    float: right;
+    border-radius: 6px 10px 10px 6px;
+    transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 0.8);
+    z-index: -1;
+}
+ 
+.arrow-right {
+    position: absolute;
+    background-color: transparent;
+    top: 10px;
+    left: 26px;
+    width: 40px;
+    height: 10px;
+    display: block;
+    transform: rotate(-35deg);
+    float: right;
+    border-radius: 2px;
+}
+.arrow-right:after {
+    content: "";
+    background-color: #337AB7;
+    width: 40px;
+    height: 10px;
+    display: block;
+    float: right;
+    border-radius: 10px 6px 6px 10px;
+    transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 0.8);
+    z-index: -1;
+}
+.opened .arrow-left:after {
+    transform-origin: center center;
+    transform: rotate(-70deg);
+}
+.opened .arrow-right:after {
+    transform-origin: center center;
+    transform: rotate(70deg);
+}
+
+@media (max-width:926px) {
+    .smarthome-about-text{
+        font-size: 1.3em;
+    }
+}
+@media (max-width:768px) {
+    .arrow{
+        display: block;
+    }
+    .smarthome-about-text{
+        font-size: 1.5em;
+    }
+    .smarthome-about-container{
+        padding: 1.3em;
+    }
+}
+@media (max-width:570px) {
+    .smarthome-about-text{
+        font-size: 1.2em;
+    }
+    .smarthome-about-container{
+        padding: 0.8em;
+    }
 }

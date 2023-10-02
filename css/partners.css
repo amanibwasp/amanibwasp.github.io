@@ -1,0 +1,32 @@
+.partners-section {
+    background-color: rgb(206, 206, 206);
+  }
+  .partners-container {
+    padding: 2em;
+  }
+  .partners-slider{
+    height: 30%;
+    overflow: hidden;
+  }
+
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-270px * 7))}
+  }
+
+  .partners-slider-row {
+    width: calc(250px * 14);
+    display: flex;
+    animation: scroll 30s linear infinite;
+  }
+  
+  
+  .slide{
+    margin: 0px 10px;
+    height: 160px;
+    min-width: 250px;
+    max-width: 250px;
+    background-image: url("/img/img_template.png");
+    background-position: center;
+    background-size: 100% auto;
+  }

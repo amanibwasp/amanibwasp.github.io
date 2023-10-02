@@ -32,5 +32,11 @@ let burger_button = document.querySelector(".hamburger-button").addEventListener
     // document.querySelector("body").classList.toggle("fixed-position")
 })
 
+let arrow = document.querySelector(".arrow").addEventListener("click", ()=>
+{
+    document.querySelector(".arrow").classList.toggle("opened")
+    document.querySelector(".smarthome-about-text").classList.toggle("opened")
+})
+
 
 
