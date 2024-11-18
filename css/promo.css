@@ -1,0 +1,95 @@
+.promo-container {
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.4),
+         rgba(0, 0, 0, 0.4)),
+          url("../img/promo_background.webp");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.promo-title {
+    color: white;
+    padding-bottom: 2vh;
+    font-size: 50px;
+}
+
+.promo-container {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+
+.promo-button-price-list {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    height: 7vh;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 2vh;
+}
+
+.promo-button-price-list:hover {
+    background-color: #0056b3;
+  }
+
+.promo-button-projects {
+    background-color: #007bff00;
+    font-weight: 600;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 25px;
+    height: 7vh;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.promo-button-projects:hover {
+    background-color: #0056b3;
+}
+
+.promo-advantages-containter {
+    margin-top: 7vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 7vh;
+}
+
+.promo-advantage-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1vh;
+}
+
+.promo-advantage-text {
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+
+.promo-advantage-icon {
+    width: 4vh;
+}
+
+@media (max-width: 768px) {
+    .promo-advantages-containter {
+        flex-direction: column;
+        gap: 3vh;
+    }
+    .promo-container {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}

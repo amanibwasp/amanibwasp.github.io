@@ -1,0 +1,85 @@
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6-column grid for flexibility */
+    gap: 20px; /* Space between grid items */
+    padding: 20px 70px;
+  }
+  
+  /* Features Grid Items */
+  .features-grid-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Different widths for chaotic layout */
+  .features-grid-item:nth-child(1) {
+    grid-column: span 3; /* Wide item */
+  }
+  
+  .features-grid-item:nth-child(2) {
+    grid-column: span 2; /* Medium item */
+  }
+  
+  .features-grid-item:nth-child(3) {
+    grid-column: span 1; /* Small item */
+  }
+  
+  .features-grid-item:nth-child(4) {
+    grid-column: span 2; /* Medium item */
+  }
+  
+  .features-grid-item:nth-child(5) {
+    grid-column: span 3; /* Wide item */
+  }
+  
+  .features-grid-item:nth-child(6) {
+    grid-column: span 1; /* Small item */
+  }
+  
+  /* Item Title */
+  .features-grid-item-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+  }
+  
+  /* Item Description */
+  .features-grid-item-description {
+    font-size: 14px;
+    color: #665;
+    font-weight: lighter;
+    line-height: 1.5;
+  }
+
+  @media (max-width: 768px) {
+    .features-grid {
+      grid-template-columns: repeat(4, 1fr); /* 4-column grid */
+    }
+  
+    .features-grid-item:nth-child(1),
+    .features-grid-item:nth-child(5) {
+      grid-column: span 4; /* Wide items take full row on tablets */
+    }
+  
+    .features-grid-item:nth-child(2),
+    .features-grid-item:nth-child(3),
+    .features-grid-item:nth-child(4),
+    .features-grid-item:nth-child(6) {
+      grid-column: span 2; /* Adjust smaller items */
+    }
+  }
+  
+  /* For Smartphones (480px and below) */
+  @media (max-width: 480px) {
+    .features-grid {
+      grid-template-columns: 1fr; /* Single-column layout */
+    }
+  
+    .features-grid-item {
+      grid-column: span 1; /* All items stack vertically */
+    }
+  }

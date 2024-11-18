@@ -1,85 +1,98 @@
-nav{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    color:rgb(0, 0, 0);
-    background: linear-gradient(rgb(136, 136, 136), rgba(0, 136, 146, 0.4));
-}
-.nav-menu{
-    justify-content: space-between;
-    list-style: none;
-    display: flex;
-}
-.nav-menu li{
-    font-weight: 400;
-    padding: 1em;
-    font-size: 1.3em;
-}
-
-.nav-menu li:hover{
-    cursor: pointer;
-    color: rgb(82, 82, 82);
-}
-
-.nav-menu-burger li:hover{
-    cursor: pointer;
-}
-
-.nav-menu-burger{
-    top:0;
-    left:0;
-    width: 100%;
-    height: 100%;
-    transition: all 0.5s;
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
     position: fixed;
-    list-style: none;
-    
-    transform: translateY(-100%);
-}
-.nav-menu-burger li{
-    padding: 1.3em;
-    font-size: 1.5em;
-    font-weight: 600;
-    /* text-shadow: black 1px 1px 1px; */
-}
-.nav-menu-burger.active{
-    transform: translateY(0);
-    touch-action: none;
-    z-index: 3;
+    z-index: 999;
+    width: 100%;
+    top: 0;
 }
 
-.hamburger-button{
-    display: none;
+.nav-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
     width: 50px;
     height: 50px;
-    position: absolute;
-    top: 5px;
-    right: 10px;
-    z-index: 4;
+    margin-right: 10px;
 }
 
-.hamburger-button span{
-    display: block;
-    position: absolute;
-    height: 2px;
-    top: 50%;
-    width: 100%;
-    background-color: rgb(155, 155, 155);
-}
-.hamburger-button span:nth-of-type(1){
-    top: calc(50% - 5px);
-}
-.hamburger-button span:nth-of-type(3){
-    top: calc(50% + 5px);
+.logo-text h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
 }
 
+.logo-text p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #777;
+}
 
+.contact-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
 
-@media (max-width: 768px) {
-    .nav-menu{
-        display: none;
-    }
-    .hamburger-button{
-        display: block;
-    }
+.phone-number {
+    font-size: 1rem;
+    color: #333;
+}
+
+.call-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.call-button:hover {
+    background-color: #0056b3;
+}
+
+.nav-bottom {
+    text-align: center;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+.nav-chips {
+    list-style-type: none;
+    padding: 8px 0px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.nav-chips li {
+    display: inline;
+}
+
+.nav-chips a {
+    text-decoration: none;
+    padding: 8px 15px;
+    background-color: #f0f0f0;
+    color: #333;
+    border-radius: 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.nav-chips a:hover {
+    background-color: #007BFF;
+    color: white;
 }

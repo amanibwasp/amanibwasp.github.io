@@ -1,231 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Main page</title>
-    <link rel="stylesheet" type="text/css" href="css/advantages.css">
-    <link rel="stylesheet" type="text/css" href="css/cta.css">
-    <link rel="stylesheet" type="text/css" href="css/examples.css">
-    <link rel="stylesheet" type="text/css" href="css/footer.css">
-    <link rel="stylesheet" type="text/css" href="css/navbar.css">
-    <link rel="stylesheet" type="text/css" href="css/services.css">
-    <link rel="stylesheet" type="text/css" href="css/start-page.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/smarthome-about.css">
-    <link rel="stylesheet" type="text/css" href="css/partners.css">
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="css/promo.css">
+    <link rel="stylesheet" type="text/css" href="css/services.css">
+    <link rel="stylesheet" type="text/css" href="css/features.css">
+    <link rel="stylesheet" type="text/css" href="css/projects.css">
+    <link rel="stylesheet" type="text/css" href="css/contacts.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <title>Home page</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul class="nav-menu">
-                <li>Главная</li>
-                <li>Услуги</li>
-                <li>Контакты</li>
-                <li>О компании</li>
+    <nav class="navbar">
+        <div class="nav-top">
+            <div class="logo-section">
+                <img src="img/ic_logo_32.svg" alt="Company logo" class="logo">
+                <div class="logo-text">
+                    <h1>Название компании</h1>
+                    <p>Краткое описание компании</p>
+                </div>
+            </div>
+            <div class="contact-section">
+                <p class="phone-number">Телефон: +123 456 7890</p>
+                <button class="call-button">Заказать звонок</button>
+            </div>
+        </div>
+        <div class="nav-bottom">
+            <ul class="nav-chips">
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#projects">Наши проекты</a></li>
+                <li><a href="#price-list">Прайс-лист</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#contacts">Контакты</a></li>
             </ul>
-            <ul class="nav-menu-burger">
-                <li>Главная</li>
-                <li>Услуги</li>
-                <li>Контакты</li>
-                <li>О компании</li>
-            </ul>
-            <div class="hamburger-button">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
-    </header>
-    <section class="start-page-section">
-        <div class="main-container">
-            <h1 class="start-page-title">Умный дом в Калининграде</h1>
-            <h2 class="start-page-subtitle">Создание умного дома под ключ</h2>
-            <div class="camera swing">
-                <div class="circle">
-                    <div class="eye"></div>
+        </div>
+    </nav>
+    <div class="promo-container">
+        <div class="promo-content">
+            <h1 class="promo-title">Электромонтажные работы <br> под ключ в Калининграде</h1>
+            <button class="promo-button-price-list">Узнать стоимость работ</button>
+            <button class="promo-button-projects">Смотерть работы</button>
+            <div class="promo-advantages-containter">
+                <div class="promo-advantage-container">
+                    <img src="img/ic_check_24.svg" alt="Advantage icon" class="promo-advantage-icon">
+                    <p class="promo-advantage-text">Преимущество 1</p>
+                </div>
+                <div class="promo-advantage-container">
+                    <img src="img/ic_check_24.svg" alt="Advantage icon" class="promo-advantage-icon">
+                    <p class="promo-advantage-text">Преимущество 2</p>
+                </div>
+                <div class="promo-advantage-container">
+                    <img src="img/ic_check_24.svg" alt="Advantage icon" class="promo-advantage-icon">
+                    <p class="promo-advantage-text">Преимущество 3</p>
                 </div>
             </div>
         </div>
-        
-    </section>
-    <section class="smarthome-about-section">
-        <span class="section-title">Что такое умный дом?</span>
-        <div class="smarthome-about-container">
-            <div class="smarthome-about-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, error! Incidunt, libero! Id, voluptas ratione sequi non fugit eligendi ullam? Numquam facilis amet impedit placeat quisquam aspernatur doloribus suscipit minima!
-            Explicabo quae facilis totam mollitia nemo dicta et qui, odit quos est itaque repellat maiores omnis soluta unde minus a. Doloremque quidem consequatur quisquam, minima reprehenderit dolore voluptates quibusdam quae?</div>
-            <div class="arrow">
-                <span class="arrow-left"></span>
-                <span class="arrow-right"></span>
-            </div>
-        </div>
-    </section>
-    <section class="services-section">
-        <span class="section-title">Наши услуги</span>
-        <div class="services">
-            <div class="service">
-                <span class="service-title">Услуга</span>
-                <button class="service-details">Подробнее</button>
-            </div>
-            <div class="service">
-                <span class="service-title">Услуга</span>
-                <button class="service-details">Подробнее</button>
-            </div>
-            <div class="service">
-                <span class="service-title">Услуга</span>
-                <button class="service-details">Подробнее</button>
-            </div>
-        </div>
-    </section>
-    <section class="partners-section">
-        <span class="section-title">Наши партнёры</span>
-        <div class="partners-container">
-            <div class="partners-slider">
-                <div class="partners-slider-row">
-                    <div class="slide"></div>
-                    <div class="slide"></div>
-                    <div class="slide"></div>
-                    <div class="slide"></div>
-                    <div class="slide"></div>
-                    <div class="slide"></div>
-                    <div class="slide"></div>
-
-                    <div class="slide"></div>
-                    <div class="slide"></div>
-                    <div class="slide"></div>
-                    <div class="slide"></div>
-                    <div class="slide"></div>
-                    <div class="slide"></div>
-                    <div class="slide"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-<!-- <div class="advantages-examples-wrapper">
-    <section class="advantages">
-        
-        <div class="advantages-grid">
-            <span class="section-title advantages-title">Наши преимущества</span>
-            <div class="advantage">
-    
-                <div class="advantage-icon">
-                    <i class="fa-solid fa-bullseye" style="color: rgb(201, 2, 2);"></i>
-                </div>
-                <span class="advantage-text">Преимущество</span>
-            </div>
-            <div class="advantage">
-                <div class="advantage-icon">
-                    <i class="fa-solid fa-thumbs-up" style="color:cornflowerblue"></i>
-                </div>
-                <span class="advantage-text">Преимущество</span>
-            </div>
-            <div class="advantage">
-                <div class="advantage-icon">
-                    <i class="fa-solid fa-clock" style="color: chocolate;"></i>
-                </div>
-                <span class="advantage-text">Преимущество</span>
-            </div>
-            <div class="advantage">
-                <div class="advantage-icon">
-                    <i class="fa-solid fa-coins" style="color:rgb(192, 163, 0)"></i>
-                </div>
-                <span class="advantage-text">Преимущество</span>
-            </div>
-            <div class="advantage">
-                <div class="advantage-icon">
-                    <i class="fa-solid fa-screwdriver-wrench" style="color:brown"></i>
-                </div>
-                <span class="advantage-text">Преимущество</span>
-            </div>
-            <div class="advantage">
-                <div class="advantage-icon">
-                    <i class="fa-solid fa-cart-shopping" style="color: rgb(10, 61, 21);"></i>
-                </div>
-                <span class="advantage-text">Преимущество</span>
-            </div>
-        </div>
-    </section> -->
-    <section class="examples-section">
-        <span class="section-title">Примеры наших работ</span>
-        <div class="examples-container">
-            <div class="example-block">
-                <div class="example-img-container">
-                    <img src="img/img_template.png" alt="example-img" class="example-img">
-                </div>
-                    <div class="example-text">
-                    <span class="example-text-title">Заголовок проекта</span>
-                    <p class="example-text-description">Описание проекта, детали, дата выполнения, прочая информация</p>
-                </div>
-            </div>
-            <div class="example-block">
-                <div class="example-img-container">
-                    <img src="img/img_template.png" alt="example-img" class="example-img">
-                </div>
-                    <div class="example-text">
-                    <span class="example-text-title">Заголовок проекта</span>
-                    <p class="example-text-description">Описание проекта, детали, дата выполнения, прочая информация</p>
-                </div>
-            </div>
-            <div class="example-block">
-                <div class="example-img-container">
-                    <img src="img/img_template.png" alt="example-img" class="example-img">
-                </div>
-                    <div class="example-text">
-                    <span class="example-text-title">Заголовок проекта</span>
-                    <p class="example-text-description">Описание проекта, детали, дата выполнения, прочая информация</p>
-                </div>
-            </div>
-            <div class="example-block">
-                <div class="example-img-container">
-                    <img src="img/img_template.png" alt="example-img" class="example-img">
-                </div>
-                    <div class="example-text">
-                    <span class="example-text-title">Заголовок проекта</span>
-                    <p class="example-text-description">Описание проекта, детали, дата выполнения, прочая информация</p>
-                </div>
-            </div>
-        </div>
-    </section>
-<!-- </div> -->
-<section class="cta">
-    <div class="cta-text">
-        <span class="cta-text-main">Если у вас есть вопросы, оставьте свои контакты в форме обратной связи</span>
-        <span class="cta-text-addition">Мы свяжемся с Вами в течение 5 минут</span>
     </div>
-    <form class="cta-form">
-        <label for="fio" class="cta-label">ФИО:</label><br>
-        <input id="fio" type="text" class="cta-text-input"><br>
-        <label for="phone" class="cta-label">телефон</label><br>
-        <input id="phone" type="text" class="cta-text-input"><br>
-        <div style="position: relative; width: fit-content;">
-            <input type="button" class="cta-confirm-button" value="ОТПРАВИТЬ">
-            
+    <section class="carousel-section">
+        <h1 class="section-title">Портфолио</h1>
+        <div class="carousel">
+        <div class="carousel-container">
+          <div class="carousel-item">
+            <img src="img/projects_1.webp" alt="Item 1" class="carousel-item-image">
+            <h2 class="carousel-item-title">Lorem ipsum dolor sit amet.</h2>
+            <p class="carousel-item-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="carousel-item">
+            <img src="img/projects_2.webp" alt="Item 2" class="carousel-item-image">
+            <h2 class="carousel-item-title">Lorem ipsum dolor sit, amet consectetur adipisicing.</h2>
+            <p class="carousel-item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, voluptate et.</p>
+          </div>
+          <div class="carousel-item">
+            <img src="img/projects_3.webp" alt="Item 3" class="carousel-item-image">
+            <h2 class="carousel-item-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, impedit.</h2>
+            <p class="carousel-item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos architecto quaerat sequi, vitae magnam itaque.</p>
+          </div>
+          <div class="carousel-item">
+            <img src="img/projects_4.webp" alt="Item 4" class="carousel-item-image">
+            <h2 class="carousel-item-title">Lorem ipsum dolor sit.</h2>
+            <p class="carousel-item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ducimus.</p>
+          </div>
+          <div class="carousel-item">
+            <img src="img/projects_5.webp" alt="Item 5" class="carousel-item-image">
+            <h2 class="carousel-item-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, libero.</h2>
+            <p class="carousel-item-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore mollitia nam eum animi provident non, perferendis dolorum sit amet quos.</p>
+          </div>
+          <div class="carousel-item">
+            <img src="img/projects_6.webp" alt="Item 6" class="carousel-item-image">
+            <h2 class="carousel-item-title">Lorem ipsum dolor sit.</h2>
+            <p class="carousel-item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ducimus.</p>
+          </div>
         </div>
-    </form>
-    
-</section>
-<footer>
-    <div class="footer-container">
-        <div class="company-info">
-            <img src="img/img_template.png" alt="logo" class="info-logo">
-            <span class="info-title">KdElectro.ru</span>
-        </div>
-        <ul class="footer-ul">
-            <li class="footer-li">Главная</li>
-            <li class="footer-li">Услуги</li>
-            <li class="footer-li">Контакты</li>
-            <li class="footer-li">О компании</li>
+        <button class="carousel-button carousel-button-left">❮</button>
+        <button class="carousel-button carousel-button-right">❯</button>
+    </div>
+      </section>
+
+      <section class="services-section">
+        <h1 class="services-title">Наши услуги</h1>
+        <ul class="services-list">
+          <li class="service-item">
+            <span class="service-text">Услуга 1</span>
+            <button class="services-button-plus">
+                <img src="img/ic_plus_24.svg" alt="Service icon" class="service-plus-icon">
+            </button>
+          </li>
+          <li class="service-item">
+            <span class="service-text">Услуга 2</span>
+            <button class="services-button-plus">
+                <img src="img/ic_plus_24.svg" alt="Service icon" class="service-plus-icon">
+            </button>
+          </li>
+          <li class="service-item">
+            <span class="service-text">Услуга 3</span>
+            <button class="services-button-plus">
+                <img src="img/ic_plus_24.svg" alt="Service icon" class="service-plus-icon">
+            </button>
+          </li>
+          <li class="service-item">
+            <span class="service-text">Услуга 4</span>
+            <button class="services-button-plus">
+                <img src="img/ic_plus_24.svg" alt="Service icon" class="service-plus-icon">
+            </button>
+          </li>
+          <li class="service-item">
+            <span class="service-text">Услуга 5</span>
+            <button class="services-button-plus">
+                <img src="img/ic_plus_24.svg" alt="Service icon" class="service-plus-icon">
+            </button>
+          </li>
         </ul>
-        <div class="footer-contacts">
-            <span>kdelectro@gmuuu.ru</span>
-            <span>+79123456789</span>
-        </div>
-    </div>
-</footer>
+        <button class="services-button-price-list">Прайс-лист</button>
+      </section>
 
-<script type="text/javascript" src="https://kit.fontawesome.com/7875ff4d48.js" crossorigin="anonymous"></script>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
-<script src="https://kit.fontawesome.com/7875ff4d48.js" crossorigin="anonymous"></script>
+      <section class="features-section">
+        <h1 class="section-title">Почему стоит выбрать нас</h1>
+        <div class="features-grid">
+            <div class="features-grid-item">
+              <h2 class="features-grid-item-title">Особенность 1</h2>
+              <p class="features-grid-item-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae aliquam adipisci inventore, modi suscipit quia!</p>
+            </div>
+            <div class="features-grid-item">
+              <h2 class="features-grid-item-title">Вторая особенность</h2>
+              <p class="features-grid-item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad!</p>
+            </div>
+            <div class="features-grid-item">
+              <h2 class="features-grid-item-title">Преимущество 3</h2>
+              <p class="features-grid-item-description">This is the description of feature three.</p>
+            </div>
+            <div class="features-grid-item">
+              <h2 class="features-grid-item-title">Четвёртое Преимущество</h2>
+              <p class="features-grid-item-description">This is the description of feature four.</p>
+            </div>
+            <div class="features-grid-item">
+              <h2 class="features-grid-item-title">Преимущество 5</h2>
+              <p class="features-grid-item-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum magni odio assumenda eius, culpa velit doloremque aliquid impedit minus possimus?</p>
+            </div>
+            <div class="features-grid-item">
+              <h2 class="features-grid-item-title">Особенность 6</h2>
+              <p class="features-grid-item-description">This is the description of feature six.</p>
+            </div>
+        </div>
+        </section>
+
+        <section class="contacts-contact-section">
+            <h1 class="section-title">Контакты</h1>
+            <div class="contacts-content">
+            <div class="contacts-contact-unit">
+                <h3>Телефон</h3>
+                <p>+123 456 7890</p>
+            </div>
+            <div class="contacts-contact-unit">
+                <h3>Почта</h3>
+                <p>example@domain.com</p>
+            </div>
+            <div class="contacts-contact-unit">
+                <h3>Социальные сети</h3>
+                <div class="contacts-social-icons-container">
+                    <img src="img/ic_vk_24.svg" alt="social network icon" class="contacts-social-icon">
+                    <img src="img/ic_pinterest_48.svg" alt="social network icon" class="contacts-social-icon">
+                    <img src="img/ic_facebook_48.svg" alt="social network icon" class="contacts-social-icon">
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <footer class="site-footer">
+            <div class="footer-container">
+              <div class="footer-branding">
+                <h1 class="company-name">Название компании</h1>
+                <p class="company-subtitle">Краткое название компании</p>
+              </div>
+              <nav class="footer-nav">
+                <ul class="footer-nav-list">
+                  <li><a href="#">Услуги</a></li>
+                  <li><a href="#">Наши проекты</a></li>
+                  <li><a href="#">Прайс-лист</a></li>
+                  <li><a href="#">О нас</a></li>
+                  <li><a href="#">Контакты</a></li>
+                </ul>
+              </nav>
+            </div>
+          </footer>
+<script src="js/projects.js"></script>
 </body>
 </html>
